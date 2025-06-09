@@ -39,6 +39,10 @@ This configuration:
    terraform apply
    ```
 
+## NOTE 
+
+The CIDR ranges of the no-NAT subnets must be added as Externally Routable Prefixes (ERPs) to both each no-NAT Flow VPC and to the transit-vpc. This Terraform sample will add the ERP entries to the Flow VPCs created by the sript but not to the "transit-vpc", as this will also automatically update the AWS VPC route table. As such, after the Terraform deployment is done, add the CIDR ranges of the subnets as ERPs to the "transit-vpc" and the VMs will be able to communicate with the outside world (as well as being accessible from EC2 instances in the VPC NC2 is deployed into). 
+
 ## Configuration Details
 
 The configuration:
