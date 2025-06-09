@@ -12,7 +12,7 @@ This repository contains a collection of Terraform samples demonstrating differe
 
 
 ## Nutanix software versions
-These scripts have been tested on and verified on NC2 on AWS with the following Nutanix software versions. 
+These samples have been tested and verified on NC2 on AWS with the following Nutanix software versions. 
 - Prism Central: pc.2024.3.1.1
 - AOS: 10.0.1
 - AHV: 7.0.1.5
