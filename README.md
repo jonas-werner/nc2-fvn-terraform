@@ -14,9 +14,9 @@ This repository contains a collection of Terraform samples demonstrating differe
 1. **nc2-fvn_nat-vpcs**: Demonstrates how to create NAT-enabled VPCs with multiple subnets
 2. **nc2-fvn_nat-vms-simple**: Shows how to deploy VMs in a NAT-enabled VPC environment
 3. **nc2-os-images**: Contains examples for managing OS images in NCI
-4. **nc2-fvn_nonat-vpcs**: Illustrates the creation of non-NAT VPCs
-5. **nc2-fvn_nonat-only**: Shows how to set up a non-NAT only networking environment
-6. **nc2-fvn_nat-nonat-vms**: Demonstrates deploying VMs in a mixed NAT/non-NAT environment
+4. **nc2-fvn_nonat-vpcs**: Illustrates the creation of no-NAT VPCs
+5. **nc2-fvn_nonat-only**: Shows how to set up a no-NAT only networking environment
+6. **nc2-fvn_nat-nonat-vms**: Demonstrates deploying VMs in a mixed NAT/no-NAT environment
 
 ## Usage
 
