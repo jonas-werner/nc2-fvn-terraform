@@ -9,6 +9,15 @@ This repository contains a collection of Terraform samples demonstrating differe
 - Terraform installed (version 1.0.0 or later)
 - Nutanix Terraform provider (version 2.2.0 or later)
 
+
+
+## Nutanix software versions
+These scripts have been tested on and verified on NC2 on AWS with the following Nutanix software versions. 
+- Prism Central: pc.2024.3.1.1
+- AOS: 10.0.1
+- AHV: 7.0.1.5
+
+
 ## Available Samples
 
 1. **nc2-fvn_nat-vpcs**: Demonstrates how to create NAT-enabled VPCs with multiple subnets
