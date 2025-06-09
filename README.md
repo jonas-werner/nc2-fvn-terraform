@@ -1,6 +1,6 @@
-# Nutanix Cloud Infrastructure (NCI) Flow Networking Terraform Samples
+# Nutanix Cloud Clusters (NC2) Flow Virtual Network Terraform Samples
 
-This repository contains a collection of Terraform samples demonstrating different Flow Networking configurations in Nutanix Cloud Infrastructure (NCI). These samples show how to set up various networking scenarios using Terraform.
+This repository contains a collection of Terraform samples demonstrating different Flow Networking configurations in Nutanix Cloud Infrastructure (NCI). These samples show how to set up various networking scenarios using Terraform. Also included are VM image downloads from public repositories and VM creation. 
 
 ## Prerequisites
 
