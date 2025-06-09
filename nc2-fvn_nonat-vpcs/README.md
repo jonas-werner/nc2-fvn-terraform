@@ -1,4 +1,4 @@
-# Non-NAT VPCs Example
+# No-NAT VPCs Example
 
 This example demonstrates how to create no-NAT VPCs with multiple subnets in Nutanix Cloud Infrastructure (NCI) using Terraform.
 
