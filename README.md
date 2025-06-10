@@ -20,12 +20,37 @@ These samples have been tested and verified on NC2 on AWS with the following Nut
 
 ## Available Samples
 
-1. **nc2-fvn_nat-vpcs**: Demonstrates how to create NAT-enabled VPCs with multiple subnets
-2. **nc2-fvn_nat-vms-simple**: Shows how to deploy VMs in a NAT-enabled VPC environment
-3. **nc2-os-images**: Contains examples for managing OS images in NCI
-4. **nc2-fvn_nonat-vpcs**: Illustrates the creation of no-NAT VPCs
-5. **nc2-fvn_nonat-only**: Shows how to set up a no-NAT only networking environment
-6. **nc2-fvn_nat-nonat-vms**: Demonstrates deploying VMs in a mixed NAT/no-NAT environment
+**nc2-fvn_nonat-only**
+* Creates the "overlay-external-subnet-nonat" subnet in the Flow "transit-vpc"
+
+**nc2-fvn_nat-vpcs**:
+* Deploys two Flow VPCs with NAT egress and two subnets each
+
+**nc2-os-images**
+* Populates the Prism Central image library with a number of Ubuntu and CentOS images from public repositories
+
+**nc2-fvn_nat-vms-simple**
+* Deploys one VPC with NAT egress and two subnets
+* Downloads and OS image
+* Deploys VMs initiated with cloud-init scripts from the OS image (customize the cloud-init YAML in the "templates" subfolder as desired)
+* Creates and associates Floating IPs from the AWS VPC CIDR range to each VM
+
+**nc2-fvn_nonat-vpcs**
+* Creates the "overlay-external-subnet-nonat" subnet in the Flow "transit-vpc"
+* Creates two Flow VPCs with no-NAT egress
+* Creates subnets in each Flow VPC
+* Adds the subnets CIDR ranges as Externally Routable Prefixes (ERP) to the Flow VPCs
+* Modify the "terraform.tfvars" file to customize the VPCs and subnets
+
+**nc2-fvn_nat-nonat-vms**
+* Creates the "overlay-external-subnet-nonat" subnet in the Flow "transit-vpc"
+* Creates two Flow VPCs: One with NAT and another with no-NAT egress
+* Creates subnets in each Flow VPC
+* Downloads an Ubuntu image
+* Deploys VMs from the Ubuntu image, including cloud-init scripts (customize them in the "templates" folder)
+* Creates and associates Floating IPs from the AWS VPC CIDR range to each VM on the NAT VPC
+* Adds the subnets CIDR ranges as Externally Routable Prefixes (ERP) to the Flow no-NAT VPCs
+
 
 ## Usage
 
